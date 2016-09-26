@@ -409,7 +409,7 @@ $(function(){
 				if( null != props.left ){ props.left = 0; }
 			}
 
-			if( mozCSS || msCSS ){
+			else if( mozCSS || msCSS ){
 				props[ mozCSS ? 'MozTransform' : 'msTransform' ] = ( props.top ? 'translateY(' + props.top + 'px)' : '' ) + ( props.left ? 'translateX(' + props.left + 'px)' : '' );
 				
 				if( null != props.top  ){ props.top  = 0; }
